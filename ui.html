@@ -1,0 +1,263 @@
+<link rel="preconnect" href="https://cdn.prod.www.spiegel.de" as="font">
+
+
+<div class="header">
+  <div class="Title">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="8.5" stroke="var(--figma-color-bg-inverse)"/>
+    <path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6V18Z" fill="var(--figma-color-bg-inverse)"/>
+    </svg>    
+  <h2>Darkmode:</h2>
+</div>
+  <label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider round"></span>
+  </label>
+</div>
+<div class="buttons">
+  <button id="SPIEGEL">SPIEGEL</button>
+  <button id="Manager">manager</button>
+  <button id="Freunde">11Freunde</button>
+</div> 
+
+
+<style>
+  @font-face {
+    font-family: SpiegelSlabCdUI;
+    font-weight: 800;
+    src: url(https://cdn.prod.www.spiegel.de/public/shared/fonts/SpiegelSlab4UICd-ExtraBold.woff2) format("woff2"), url(https://cdn.prod.www.spiegel.de/public/shared/fonts/SpiegelSlab4UICd-ExtraBold.woff) format("woff")
+  }
+
+  @font-face {
+    font-family: SpiegelSans4UI;
+    font-weight: 800;
+    src: url(https://cdn.prod.www.spiegel.de/public/shared/fonts/SpiegelSans4UI-Bold.woff2);
+  }
+
+  @font-face {
+    font-family: SpiegelSans4UI;
+    font-weight: 700;
+    src: url(https://cdn.prod.www.spiegel.de/public/shared/fonts/SpiegelSans4UI-Regular.woff2);
+  }
+
+
+  html {
+    height: auto !important;
+  }
+
+
+
+  body {
+    background-color: var(--figma-color-bg);
+    color: var(--figma-color-text);
+    display: flex;
+    flex-direction: column;
+    font-family: "SpiegelSans4UI";
+    font-size: 11px;
+    gap: 8px;
+    margin: 0;
+    padding: 8px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 22px;
+    width: 100%;
+  }
+
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+  }
+
+  h2 {
+    vertical-align: middle;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 100%;
+
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+    height: auto;
+
+  }
+
+  button {
+    width: 100%;
+    height: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: var(--figma-color-bg);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .12);
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid #BBB9B7;
+    color: var(--figma-color-text);
+    font-size: 11px;
+    font-family: "Inter";
+
+
+  }
+
+  button:hover {
+    cursor: pointer;
+    color: white;
+    border: 1px solid var(--figma-color-bg-inverse);
+
+  }
+
+ #SPIEGEL{
+    display: none;
+ }
+
+  #SPIEGEL:hover{
+    background-color: #E64415;
+  }
+
+  #Freunde:hover {
+    background-color: #3C8771;
+  }
+
+  #Manager:hover {
+    background-color: #1b43a4;
+  }
+
+  .header {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .switch {
+  position: relative;
+  display: flex;
+  width: 32px;
+  height: 12px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--figma-color-bg-disabled);
+  -webkit-transition: .4s;
+  transition: .4s;
+  height: 18px;
+}
+ 
+label.switch {
+  display: flex !important;
+  height: auto;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  top: 2px;
+  left: 2px;
+  bottom: 0px;
+  background-color: var(--figma-color-bg);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--figma-color-bg-inverse);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--figma-color-bg-sucess);
+;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 200px;
+  top: 2px;
+}
+
+.span.slider.round {
+  display: flex;
+  align-content: center !important;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+  @media (prefers-color-scheme: dark) {
+
+    button {
+      border: 1px solid #807E7C;
+    }
+
+    #Freunde:hover {
+      background-color: #449869;
+    }
+
+    #Manager:hover {
+      background-color: #346BF1;
+    }
+
+    #SPIEGEL:hover{
+      background-color: #D03D12;
+    }
+
+  }
+</style>
+<script>
+  // Listen for click event on the button
+  document.getElementById('Freunde').addEventListener('click', function () {
+    // Send a message to the plugin code when the button is clicked
+    parent.postMessage({ pluginMessage: { type: 'apply-freunde' } }, '*');
+  });
+</script>
+
+<script>
+  // Listen for click event on the button
+  document.getElementById('Manager').addEventListener('click', function () {
+    // Send a message to the plugin code when the button is clicked
+    parent.postMessage({ pluginMessage: { type: 'apply-manager' } }, '*');
+  });
+</script>
+
+
+<script>
+  window.onmessage = (event) => {
+    const msg = event.data.pluginMessage;
+    if (msg.type === 'style-counts') {
+      document.getElementById('fillStyleCount').textContent = `Fill styles: ${msg.fillStyleCount}`;
+      document.getElementById('textStyleCount').textContent = `Text styles: ${msg.textStyleCount}`;
+    }
+  };
+</script>
