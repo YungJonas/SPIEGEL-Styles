@@ -1,3 +1,4 @@
+// 11 Freunde Basic Color
 const f_color = {
     // F-Basic
     basic_black: "S:cea2dc9481236f61516fb531638b20330374eaa0,435:0",

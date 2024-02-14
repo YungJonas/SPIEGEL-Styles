@@ -28,7 +28,7 @@ const s_color = {
 //Define SPIEGEL-textStyles
 const s_text = {
 
-  //HEADLINES Slab Condensed UI:
+//HEADLINES Slab Condensed UI:
 HL44_Slab_Cd_Extrabold_tight: "S:7d36c605db749a41acab5f034f4dd5103b0a7c57,10944:15",
 HL40_Slab_Cd_Extrabold_tight: "S:1c543464fc9c62b7aa0213eabbc0186688949d62,11636:10",
 HL48_Slab_Cd_Extrabold_tight: "S:a2b3d1dc8ea94fcd0343a1089b97d10b767f85e5,11633:5",
