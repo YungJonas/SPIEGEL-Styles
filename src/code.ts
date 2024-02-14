@@ -275,7 +275,7 @@ figma.ui.onmessage = msg => {
     }
     else {
       // Optionally, send a error message back to the UI
-      figma.notify("please select something first.", { error: true });
+      figma.notify("please select something.", { error: true });
     }
   }
   if (msg.type === 'apply-manager') {
@@ -290,7 +290,7 @@ figma.ui.onmessage = msg => {
       }
     }
     else {
-      figma.notify("please select something first.", { error: true });
+      figma.notify("please select something.", { error: true });
     }
   }
 
