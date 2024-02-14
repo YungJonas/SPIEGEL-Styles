@@ -11,7 +11,7 @@ const m_color = {
   shades_lighter: "S:efb9596e1c8839b813aace0672a5d07c2d990435,1992:14",
   shades_lightest: "S:0a9e138ea981a670a057e835b17edc371a46ccb0,1992:16",
   //m-Primary Color(Styles)
-  primary_darker: "S:721f8fc0d377cfabd542b07113131ced355131fc,5772:0",
+  primary_darker: "S:721f8fc0d377cfabd542b07113131ced355131fc,1992:18",
   primary_dark: "S:7b2201e8647f1c3bf5bd8e183faabae5314f9557,1992:20",
   primary_base: "S:6ee0a5ef259a0f2c85b0ed7dc9491993ad0a9631,1992:22",
   primary_lighter: "S:b1eda6443bdd5e8063208d5a3b6135176cee69ef,1992:24",
