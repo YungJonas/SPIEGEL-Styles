@@ -275,7 +275,7 @@ figma.ui.onmessage = msg => {
     }
     else {
       // Optionally, send a error message back to the UI
-      figma.notify("please select something.", { error: true });
+      figma.notify("please select SPIEGEL component first 🙌.", { error: true });
     }
   }
   if (msg.type === 'apply-manager') {
