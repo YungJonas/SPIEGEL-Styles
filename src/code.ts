@@ -8,7 +8,7 @@ import { s_color, s_text } from "./spiegelstyles";
 import { f_color } from "./freundestyles";
 import { m_color } from "./managerstyles";
 
-figma.showUI(__html__, { width: 224, height: 80, themeColors: true, });
+figma.showUI(__html__, { width: 176, height: 80, themeColors: true, });
 
 
 //11F TEXT STYLING//:
@@ -234,7 +234,7 @@ function countStylesInNodes(nodes: ReadonlyArray<SceneNode>): { fillStyleCount: 
     if ('fillStyleId' in node /*&& node.fillStyleId*/) {
       fillStyleCount++;
     }
-    if (node.type === 'TEXT' && node.textStyleId) {
+    if (node.type === 'TEXT' && 'textStyleId' in node) {
       textStyleCount++;
     }
     if ('children' in node) {
@@ -271,11 +271,11 @@ figma.ui.onmessage = msg => {
       }
 
       // Optionally, send a confirmation message back to the UI
-      figma.notify(`${fillStyleChanges} Colors & ${textStyleChanges} Fonts changed to 11 Freunde ⚽.`);
+      figma.notify(`${fillStyleChanges} Colors & ${textStyleChanges} Fonts changed to 11 Freunde ⚽`);
     }
     else {
       // Optionally, send a error message back to the UI
-      figma.notify("please select SPIEGEL component first 🙌.", { error: true });
+      figma.notify("please select component first 🤝");
     }
   }
   if (msg.type === 'apply-manager') {
@@ -290,7 +290,7 @@ figma.ui.onmessage = msg => {
       }
     }
     else {
-      figma.notify("please select something.", { error: true });
+      figma.notify("please select component first 🤝");
     }
   }
 
