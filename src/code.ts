@@ -6,7 +6,7 @@
 //Import Color & Text Styles
 import { s_color, s_text } from "./spiegelstyles";
 import { f_color } from "./freundestyles";
-import { m_color } from "./managerstyles";
+import { m_color, m_text } from "./managerstyles";
 
 figma.showUI(__html__, { width: 176, height: 80, themeColors: true, });
 

@@ -24,4 +24,15 @@ const m_color = {
   darkmode_primary_base: "S:6898db10c4b15f65838dca65d6e7cc1dfe340dd3,3830:4",
 }
 
-export { m_color };
+const m_text = {
+  HL_44_National2_Narrow_Bold_tight: "S:16f262d94bcb8b4d8c72f549228df47538ce1b85,2128:0",
+  HL_36_National2_Narrow_Bold_tight: "S:1e38f4354fdd89a49091ec978d1fb08545c84acb,2128:1",
+  HL_32_National2_Narrow_Bold_tight: "S:d69ab0bfee488e66cb499f2ec8751380dbfa4543,2128:2",
+  HL_28_National2_Narrow_Bold_tight: "S:070a6c856c8d8946500d441a9a9e0f5c0835e771,2128:3",
+  HL_24_National2_Narrow_Bold_tight: "S:ad62479af550abae77acbbea4d0aee69348a5196,2128:4",
+  HL206_National2_Narrow_Bold_tight: "S:743bb45efde6960460da53f0d62840b990bc7b57,12120:0",
+  HL18_National2_Narrow_Bold_tight: "S:d6622a6a9fbad04855d5bfed9e409e5dbf6521f0,12365:0",
+  HL168_National2_Narrow_Bold_tight: "S:83ae8213d0f7b7633213331763f0a5dcf2e55d4b,12365:1",
+}
+
+export { m_color, m_text };
