@@ -40,15 +40,15 @@ const f_text = {
     HL168_Galano_Bold_tight: "S:2a0c4cbe143c21e43408f97ffdb0d384b5385984,873:9",
 
     //Headlines / Freight Text Pro Bold / Opinion
-    HL40_Freight_Bold_Italic: "S:744467c583e91ae651e697b3c81ff8bff4b87c58,1105:6",
-    HL36_Freight_Bold_Italic: "S:004a5dde572924c0ba4a5649701b724f53deec3d,1105:9",
-    HL32_Freight_Bold_Italic: "S:e8cec257851ac230fef799dc472a17bd32178065,1105:12",
-    HL28_Freight_Bold_Italic: "S:6b34afd6188c108f13ed898d10b3ad61563a7941,1105:15",
-    HL24_Freight_Bold_Italic: "S:afef54e8cd6d9236f9204f65c627c69c1de78082,1105:24",
-    HL206_Freight_Bold_Italic: "S:2026d833fac47c93f4f824e28403160b5c5f39d7,1105:18",
-    HL18_Freight_Bold_Italic: "S:5dd294240c6c0087458b241307bbab4ab2d438f8,1105:21",
-    HL168_Freight_Bold_Italic: "S:c22e6d5009af6a9130d5f7cbf872a3a77d528699,1105:27",
-    HL14_Freight_Bold_Italic: "S:9cf0684bbff8d0fdd2808315d99712d175c15566,1105:30",
+    HL40_Freight_Bold_Italic: "S:744467c583e91ae651e697b3c81ff8bff4b87c58,3897:3",
+    HL36_Freight_Bold_Italic: "S:004a5dde572924c0ba4a5649701b724f53deec3d,3897:2",
+    HL32_Freight_Bold_Italic: "S:e8cec257851ac230fef799dc472a17bd32178065,3897:5",
+    HL28_Freight_Bold_Italic: "S:6b34afd6188c108f13ed898d10b3ad61563a7941,3897:7",
+    HL24_Freight_Bold_Italic: "S:afef54e8cd6d9236f9204f65c627c69c1de78082,3897:9",
+    HL206_Freight_Bold_Italic: "S:2026d833fac47c93f4f824e28403160b5c5f39d7,3897:11",
+    HL18_Freight_Bold_Italic: "S:5dd294240c6c0087458b241307bbab4ab2d438f8,3897:13",
+    HL168_Freight_Bold_Italic: "S:c22e6d5009af6a9130d5f7cbf872a3a77d528699,3897:15",
+    HL14_Freight_Bold_Italic: "S:9cf0684bbff8d0fdd2808315d99712d175c15566,3897:17",
 
     //Headlines / Freight Text Pro Back / Highlight
     HL40_Freight_Book: "S:6c372cdd7be20c94a5b397132c21c8cc6f12aa4e,1093:14",
@@ -62,7 +62,7 @@ const f_text = {
     HL24_Galano_Bold: "S:8fba8fae8e9f89bb0cb22e6d9181dcd86a8c1b39,475:82",
     HL206_Galano_Bold: "S:ae97b6bb3b0d67ae0272ddeda354c45f7c8aba62,475:145",
     HL18_Galano_Bold: "S:c6bea5d1f374f77dcb0b2076bc882d1e36dc50f4,475:84",
-    HL18_Galano_Regular: "S:207086c31118aa31014e046172fd84f63288c577,475:147",
+    HL18_Galano_Regular: "S:207086c31118aa31014e046172fd84f63288c577,3913:1",
     HL168_Galano_Bold: "S:3724fd1a99393dea507870a500dbf1565481a4cb,475:85",
     HL168_Galano_Regular: "S:2a248e1b77075fb042887e6d33cf3fb7aad447a0,475:86",
     HL14_Galano_Bold: "S:850d517fd149dbe9398c4efd0d594f37d73da0b7,475:87",

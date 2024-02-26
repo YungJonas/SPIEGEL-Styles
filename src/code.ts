@@ -141,7 +141,7 @@ const f_textMap = {
 
   [s_text.Special28_Slab_Cd_Extrabold]: f_text.Special28_Galano_Bold,
   [s_text.Special24_Slab_Cd_Extrabold]: f_text.Special24_Galano_Bold,
-}
+};
 
 const m_textMap = {
   // HEADLINES Mapping
@@ -230,7 +230,7 @@ const m_textMap = {
   [s_text.Special28_Slab_Cd_Extrabold]: m_text.Special28_National_2_Narrow_Bold,
   [s_text.Special24_Slab_Cd_Extrabold]: m_text.Special24_National_2_Narrow_Bold,
 
-}
+};
 
 
 
@@ -276,7 +276,7 @@ figma.ui.onmessage = msg => {
       for (const node of nodes) {
         changeColor(node, f_ColorMap);
         changeTextStyle(node, f_textMap);
-        changeStrokeStyle(node, f_ColorMap);
+        //changeStrokeStyle(node, f_ColorMap);
       }
 
       // Optionally, send a confirmation message back to the UI
@@ -287,7 +287,7 @@ figma.ui.onmessage = msg => {
       figma.notify("please select component first 🤝");
     }
   }
-  if (msg.type === 'apply-manager') {
+  /*if (msg.type === 'apply-manager') {
     const nodes = figma.currentPage.selection;
 
     // Zoom to selected Elements
@@ -296,13 +296,14 @@ figma.ui.onmessage = msg => {
     if (nodes.length > 0) {
       for (const node of nodes) {
         changeColor(node, m_ColorMap);
+        changeTextStyle(node, m_textMap);
       }
     }
     else {
       figma.notify("please select component first 🤝");
     }
   }
-
+*/
   fillStyleChanges = 0;
   textStyleChanges = 0;
 
@@ -356,19 +357,19 @@ function changeTextStyle(node: SceneNode, f_textMap: { [key: string]: string }):
           node.setRangeTextStyleId(runningStart, end, f_textMap[segment.textStyleId]);
         }
         runningStart += segment.characters.length;
-      }
+      };
     }
   }
   // If the node has children, apply the function recursively to each child
   if ('children' in node) {
-    node.children.forEach(child => changeTextStyle(child, f_textMap));
+    node.children.forEach(child => changeTextStyle(child, f_textMap))
   }
-}
+};
 
 // Assume changeStrokeStyle follows a similar pattern if needed
 
 
-function changeStrokeStyle(node: SceneNode, f_ColorMap: { [key: string]: string }): void {
+/*function changeStrokeStyle(node: SceneNode, f_ColorMap: { [key: string]: string }): void {
   // Check if the node is of type VECTOR OR of type INSTANCE
   if (node.type === 'VECTOR' || node.type === 'INSTANCE' || node.type === 'LINE') {
     // Check if strokeStyleId exists in the node
@@ -383,4 +384,4 @@ function changeStrokeStyle(node: SceneNode, f_ColorMap: { [key: string]: string 
       changeStrokeStyle(child, f_ColorMap);
     }
   }
-} 
+} */
