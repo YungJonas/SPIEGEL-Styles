@@ -54,9 +54,6 @@ const m_ColorMap = {
   [s_color.secondary2_lightest]: m_color.secondary2_lightest,
 }
 
-
-
-
 const f_textMap = {
   // HEADLINES Mapping
   //[HL48_Slab_Cd_Extrabold_tight]: "No direct match in 11Freunde",
@@ -132,7 +129,110 @@ const f_textMap = {
   [s_text.UI12_Sans_Bold_caps_xwide]: f_text.UI12_Galano_Bold_caps_xwide,
   [s_text.UI12_Sans_Regular_caps_xwide]: f_text.UI12_Galano_Regular_caps_xwide,
   [s_text.UI10_Sans_Regular]: f_text.UI10_Galano_Regular,
+
+  //Special Mapping
+  [s_text.Special64_Serif_Text_Regular]: f_text.Special64_Freight_Book,
+  [s_text.Special58_Serif_Text_Regular]: f_text.Special58_Freight_Book,
+  [s_text.Special28_Serif_Text_Regular]: f_text.Special28_Freight_Book,
+  [s_text.Special24_Serif_Text_Regular]: f_text.Special24_Freight_Book,
+
+  [s_text.Special28_Serif_Display_Bold_Italic]: f_text.Special28_Freight_Bold_Italic,
+  [s_text.Special24_Serif_Display_Bold_Italic]: f_text.Special24_Freight_Bold_Italic,
+
+  [s_text.Special28_Slab_Cd_Extrabold]: f_text.Special28_Galano_Bold,
+  [s_text.Special24_Slab_Cd_Extrabold]: f_text.Special24_Galano_Bold,
 }
+
+const m_textMap = {
+  // HEADLINES Mapping
+  //[HL48_Slab_Cd_Extrabold_tight]: "No direct match in 11Freunde",
+  [s_text.HL44_Slab_Cd_Extrabold_tight]: m_text.HL44_National2_Narrow_Bold_tight,
+  //[HL40_Slab_Cd_Extrabold_tight]: "No direct match in 11Freunde",
+  [s_text.HL36_Slab_Cd_Extrabold_tight]: m_text.HL36_National2_Narrow_Bold_tight,
+  [s_text.HL32_Slab_Cd_Extrabold_tight]: m_text.HL32_National2_Narrow_Bold_tight,
+  [s_text.HL28_Slab_Cd_Extrabold_tight]: m_text.HL28_National2_Narrow_Bold_tight,
+  [s_text.HL24_Slab_Cd_Extrabold_tight]: m_text.HL24_National2_Narrow_Bold_tight,
+  [s_text.HL20_Slab_Cd_Extrabold_tight]: m_text.HL206_National2_Narrow_Bold_tight,
+  [s_text.HL18_Slab_Cd_Extrabold_tight]: m_text.HL18_National2_Narrow_Bold_tight,
+  [s_text.HL16_Slab_Cd_Extrabold_tight]: m_text.HL168_National2_Narrow_Bold_tight,
+
+  [s_text.HL40_Serif_Display_Bold_Italic]: m_text.HL40_Freight_Bold_Italic,
+  [s_text.HL36_Serif_Display_Bold_Italic]: m_text.HL36_Freight_Bold_Italic,
+  [s_text.HL32_Serif_Display_Bold_Italic]: m_text.HL32_Freight_Bold_Italic,
+  [s_text.HL28_Serif_Display_Bold_Italic]: m_text.HL28_Freight_Bold_Italic,
+  [s_text.HL24_Serif_Display_Bold_Italic]: m_text.HL24_Freight_Bold_Italic,
+  [s_text.HL20_Serif_Display_Bold_Italic]: m_text.HL206_Freight_Bold_Italic,
+  [s_text.HL18_Serif_Display_Bold_Italic]: m_text.HL18_Freight_Bold_Italic,
+  [s_text.HL16_Serif_Display_Bold_Italic]: m_text.HL168_Freight_Bold_Italic,
+  [s_text.HL14_Serif_Display_Bold_Italic]: m_text.HL14_Freight_Bold_Italic,
+
+  [s_text.HL40_Serif_Text_Regular]: m_text.HL40_Freight_Book,
+  [s_text.HL32_Serif_Text_Regular]: m_text.HL32_Freight_Book,
+  [s_text.HL28_Serif_Text_Regular]: m_text.HL28_Freight_Book,
+  [s_text.HL24_Serif_Text_Regular]: m_text.HL24_Freight_Book,
+  [s_text.HL18_Serif_Text_Regular]: m_text.HL18_Freight_Book,
+
+  [s_text.HL28_Sans_Bold]: m_text.HL28_National2_Bold,
+  [s_text.HL24_Sans_Bold]: m_text.HL24_National2_Bold,
+  [s_text.HL20_Sans_Bold]: m_text.HL206_National2_Bold,
+  [s_text.HL18_Sans_Bold]: m_text.HL18_National2_Bold,
+  [s_text.HL18_Sans_Regular]: m_text.HL18_National2_Regular,
+  [s_text.HL16_Sans_Bold]: m_text.HL168_National2_Bold,
+  [s_text.HL16_Sans_Regular]: m_text.HL168_National2_Regular,
+  [s_text.HL14_Sans_Bold]: m_text.HL14_National2_Bold,
+  [s_text.HL14_Sans_Regular]: m_text.HL14_National2_Regular,
+
+  // TEXT Mapping
+  [s_text.Text20_Sans_Regular_loose]: m_text.Text206_National2_Regular_loose, 
+  [s_text.Text18_Sans_Regular_loose]: m_text.Text18_National2_Regular_loose,
+  [s_text.Text16_Sans_Bold_loose]: m_text.Text168_National2_Bold_loose,
+  [s_text.Text16_Sans_Regular_loose]: m_text.Text168_National2_Regular_loose,
+  [s_text.Text14_Sans_Bold_loose]: m_text.Text14_National2_Bold_loose,
+  [s_text.Text14_Sans_Regular_loose]: m_text.Text14_National2_Regular_loose,
+
+  [s_text.Text20_Serif_Text_Bold_xloose]: m_text.Text206_Freight_Bold_xloose, 
+  [s_text.Text20_Serif_Text_Bold_Italic_xloose]: m_text.Text206_Freight_Bold_Italic_xloose, 
+  [s_text.Text20_Serif_Text_Regular_xloose]: m_text.Text206_Freight_Book_xloose, 
+  [s_text.Text20_Serif_Text_Italic_xloose]: m_text.Text206_Freight_Italic_xloose, 
+  [s_text.Text18_Serif_Text_Bold_xloose]: m_text.Text18_Freight_Bold_xloose, 
+  [s_text.Text18_Serif_Text_Bold_Italic_xloose]: m_text.Text18_Freight_Bold_Italic_xloose, 
+  [s_text.Text18_Serif_Text_Regular_xloose]: m_text.Text18_Freight_Book_xloose, 
+  [s_text.Text18_Serif_Text_Italic_xloose]: m_text.Text18_Freight_Italic_xloose, 
+  [s_text.Text18_Serif_Text_Regular_loose]: m_text.Text18_Freight_Book_loose,
+  [s_text.Text16_Serif_Text_Regular_loose]: m_text.Text168_Freight_Book_loose,
+
+  // UI Mapping
+  [s_text.UI20_Serif_Text_Bold_Italic]: m_text.UI206_Freight_Bold_Italic,
+  [s_text.UI20_Serif_Text_Italic]: m_text.UI206_Freight_Book_Italic,
+  [s_text.UI18_Serif_Text_Bold_Italic]: m_text.UI18_Freight_Bold_Italic,
+  [s_text.UI18_Serif_Text_Italic]: m_text.UI18_Freight_Book_Italic,
+
+  [s_text.UI16_Sans_Bold]: m_text.UI168_National_2_Bold,
+  [s_text.UI16_Sans_Regular]: m_text.UI168_National_2_Regular,
+  [s_text.UI14_Sans_Bold]: m_text.UI14National_2_Bold,
+  [s_text.UI14_Sans_Regular]: m_text.UI14National_2_Regular,
+  [s_text.UI14_Sans_Regular_caps_xwide]: m_text.UI14National_2_Regular_caps_xwide,
+  //[UI14_Sans_Bold_caps_xwide]: UI14_Galano_Bold_xwide, //MISSING STYLE?
+  [s_text.UI12_Sans_Regular]: m_text.UI12National_2_Regular,
+  [s_text.UI12_Sans_Regular_wide]: m_text.UI12National_2_Regular_wide,
+  [s_text.UI12_Sans_Bold_caps_xwide]: m_text.UI12National_2_Bold_caps_xwide,
+  [s_text.UI12_Sans_Regular_caps_xwide]: m_text.UI12National_2_Regular_caps_xwide,
+  [s_text.UI10_Sans_Regular]: m_text.UI10National_2_Regular,
+
+  [s_text.Special64_Serif_Text_Regular]: m_text.Special64_Freight_Book,
+  [s_text.Special58_Serif_Text_Regular]: m_text.Special58_Freight_Book,
+  [s_text.Special28_Serif_Text_Regular]: m_text.Special28_Freight_Book,
+  [s_text.Special24_Serif_Text_Regular]: m_text.Special24_Freight_Book,
+
+  [s_text.Special28_Serif_Display_Bold_Italic]: m_text.Special28_Freight_Bold_Italic,
+  [s_text.Special24_Serif_Display_Bold_Italic]: m_text.Special24_Freight_Bold_Italic,
+
+  [s_text.Special28_Slab_Cd_Extrabold]: m_text.Special28_National_2_Narrow_Bold,
+  [s_text.Special24_Slab_Cd_Extrabold]: m_text.Special24_National_2_Narrow_Bold,
+
+}
+
+
 
 // Counting fillStyles and textStyles in current selection and returning the values.
 function countStylesInNodes(nodes: ReadonlyArray<SceneNode>): { fillStyleCount: number, textStyleCount: number } {
