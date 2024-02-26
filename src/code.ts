@@ -225,13 +225,13 @@ const f_textMap = {
   [s_text.UI10_Sans_Regular]: UI10_Galano_Regular,
 }
 
-
+// Counting fillStyles and textStyles in current selection and returning the values.
 function countStylesInNodes(nodes: ReadonlyArray<SceneNode>): { fillStyleCount: number, textStyleCount: number } {
   let fillStyleCount = 0;
   let textStyleCount = 0;
 
   function traverse(node: SceneNode) {
-    if ('fillStyleId' in node /*&& node.fillStyleId*/) {
+    if ('fillStyleId' in node) {
       fillStyleCount++;
     }
     if (node.type === 'TEXT' && 'textStyleId' in node) {
