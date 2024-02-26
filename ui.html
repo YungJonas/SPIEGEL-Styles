@@ -3,14 +3,14 @@
 
 <div class="header">
   <div class="Title">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="12" cy="12" r="8.5" stroke="var(--figma-color-bg-inverse)"/>
-    <path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6V18Z" fill="var(--figma-color-bg-inverse)"/>
-    </svg>    
-  <h2>Darkmode:</h2>
-</div>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="8.5" stroke="var(--figma-color-bg-inverse)" />
+      <path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6V18Z" fill="var(--figma-color-bg-inverse)" />
+    </svg>
+    <h2>Darkmode:</h2>
+  </div>
   <label class="switch">
-    <input type="checkbox" checked>
+    <input type="checkbox">
     <span class="slider round"></span>
   </label>
 </div>
@@ -18,7 +18,7 @@
   <button id="SPIEGEL">SPIEGEL</button>
   <button id="Manager">manager</button>
   <button id="Freunde">11Freunde</button>
-</div> 
+</div>
 
 
 <style>
@@ -66,7 +66,7 @@
     width: 100%;
   }
 
-  .title{
+  .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -118,11 +118,11 @@
 
   }
 
- #SPIEGEL{
+  #SPIEGEL {
     display: none;
- }
+  }
 
-  #SPIEGEL:hover{
+  #SPIEGEL:hover {
     background-color: #E64415;
   }
 
@@ -142,78 +142,78 @@
   }
 
   .switch {
-  position: relative;
-  display: flex;
-  width: 32px;
-  height: 12px;
-}
+    position: relative;
+    display: flex;
+    width: 32px;
+    height: 12px;
+  }
 
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--figma-color-bg-disabled);
-  -webkit-transition: .4s;
-  transition: .4s;
-  height: 18px;
-}
- 
-label.switch {
-  display: flex !important;
-  height: auto;
-}
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--figma-color-bg-disabled);
+    -webkit-transition: .4s;
+    transition: .4s;
+    height: 18px;
+  }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 14px;
-  width: 14px;
-  top: 2px;
-  left: 2px;
-  bottom: 0px;
-  background-color: var(--figma-color-bg);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
+  label.switch {
+    display: flex !important;
+    height: auto;
+  }
 
-input:checked + .slider {
-  background-color: var(--figma-color-bg-inverse);
-}
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    top: 2px;
+    left: 2px;
+    bottom: 0px;
+    background-color: var(--figma-color-bg);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px var(--figma-color-bg-sucess);
-;
-}
+  input:checked+.slider {
+    background-color: var(--figma-color-bg-inverse);
+  }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(14px);
-  -ms-transform: translateX(14px);
-  transform: translateX(14px);
-}
+  input:focus+.slider {
+    box-shadow: 0 0 1px var(--figma-color-bg-sucess);
+    ;
+  }
 
-/* Rounded sliders */
-.slider.round {
-  border-radius: 200px;
-  top: 2px;
-}
+  input:checked+.slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+  }
 
-.span.slider.round {
-  display: flex;
-  align-content: center !important;
-}
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 200px;
+    top: 2px;
+  }
 
-.slider.round:before {
-  border-radius: 50%;
-}
+  .span.slider.round {
+    display: flex;
+    align-content: center !important;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
   @media (prefers-color-scheme: dark) {
 
@@ -229,7 +229,7 @@ input:checked + .slider:before {
       background-color: #346BF1;
     }
 
-    #SPIEGEL:hover{
+    #SPIEGEL:hover {
       background-color: #D03D12;
     }
 
