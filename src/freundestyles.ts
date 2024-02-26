@@ -58,6 +58,7 @@ const f_text = {
     HL18_Freight_Book: "S:51fdbf5606e42974f1c0d6726d5dac07252f3f94,1093:31",
 
     //Headlines / 11F Galano
+    //HL32_Galano_Bold: Currently missing...
     HL28_Galano_Bold: "S:3a06ebbbcaff6560dc8c429b24ea30c45455b2fc,475:81",
     HL24_Galano_Bold: "S:8fba8fae8e9f89bb0cb22e6d9181dcd86a8c1b39,475:82",
     HL206_Galano_Bold: "S:ae97b6bb3b0d67ae0272ddeda354c45f7c8aba62,475:145",

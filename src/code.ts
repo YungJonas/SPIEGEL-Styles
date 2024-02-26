@@ -287,7 +287,7 @@ figma.ui.onmessage = msg => {
       figma.notify("please select component first 🤝");
     }
   }
-  /*if (msg.type === 'apply-manager') {
+  if (msg.type === 'apply-manager') {
     const nodes = figma.currentPage.selection;
 
     // Zoom to selected Elements
@@ -303,11 +303,11 @@ figma.ui.onmessage = msg => {
       figma.notify("please select component first 🤝");
     }
   }
-*/
+
   fillStyleChanges = 0;
   textStyleChanges = 0;
 
-}
+};
 
 
 

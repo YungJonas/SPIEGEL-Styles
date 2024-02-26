@@ -59,6 +59,7 @@ HL24_Serif_Text_Regular: "S:d695e4b28b3f7f9970458b8012df57f49b35e6f7,10944:11",
 HL18_Serif_Text_Regular: "S:ddb908c7c7aab2fc6c07e02c9cb0fde8055c5eef,9915:6",
 
 //HEADLINES Sans UI:
+HL32_Sans_Bold: "S:9a6dfe6f92d346e7de8480d304a0313bd9795df0,10944:13", //This Style is located under the page "Headlines"...?
 HL28_Sans_Bold: "S:e70573c5151a969fb713e9421bd2fb697c5dcd54,10944:21",
 HL24_Sans_Bold: "S:37ee2e32f18dd799910c8107e67a7710d4eec9a5,10944:52",
 HL20_Sans_Bold: "S:28d988e930e94e251233abce26864709751d6d05,10944:25",
